@@ -1,3 +1,329 @@
-<h1>
-    Hello dashboard
-</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Dashboard</title>
+
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="assets/vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css">
+  <!-- endinject -->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Plugin css for this page -->
+  <link rel="stylesheet" href="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="/assets/css/dashboard.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/Logo-final.png" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container-scroller">
+
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row dashboard-top-nav-add">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
+        <a class="navbar-brand brand-logo" href="#">
+          <img src="assets/images/Logo-user-img.png" alt="logo" /></a>
+        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/Logo-final.png"
+            alt="logo" /></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-stretch">
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="mdi mdi-menu"></span>
+        </button>
+
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">How to Play</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">How to Win</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
+        </ul>
+
+        <ul class="navbar-nav navbar-nav-right">
+
+          <li class="chips-points-add">
+            <span class="badge coin-pill d-inline-flex align-items-center gap-2 p-2">
+              <a href="#"><img src="assets/images/Logo-final.png"> <span class="number-add">350</span></a>
+            </span>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#"
+              data-bs-toggle="dropdown">
+              <i class="mdi mdi-bell-outline"></i>
+              <span class="count-symbol bg-danger"></span>
+            </a>
+
+          </li>
+          <li class="nav-item nav-profile dropdown">
+            <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <div class="nav-profile-img">
+                <img src="assets/images/top-right-img.png" alt="image">
+              </div>
+              <div class="nav-profile-text">
+                <p class="mb-1 text-black">Emma</p>
+              </div>
+            </a>
+            <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item" href="#">
+                <i class="mdi mdi-cached me-2 text-success"></i> Activity Log </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <i class="mdi mdi-logout me-2 text-primary"></i> Signout </a>
+            </div>
+          </li>
+
+
+        </ul>
+
+
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+          data-toggle="offcanvas">
+          <span class="mdi mdi-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas dashboard-side-bar-add" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-border-all"></i>
+              <span class="menu-title">Dashboard</span>
+
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-bar-chart-line"></i>
+              <span class="menu-title">Leaderboard</span>
+
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-flag"></i>
+              <span class="menu-title">Join a Race</span>
+            </a>
+          </li>
+
+          <li class="nav-item private-tab-add">
+            <a class="nav-link ui-basic-add" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false"
+              aria-controls="ui-basic">
+              <i class="bi bi-person-video2"></i>
+              <span class="menu-title">Private Race</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Create Your Own Private Race</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Join a Private Race</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Manage Your Private Races</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-bar-chart-line"></i>
+              <span class="menu-title">Learn to Earn Racing Chips</span>
+
+            </a>
+          </li>
+
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-share"></i>
+              <span class="menu-title">Invite Friends, Earn Racing Chips</span>
+
+            </a>
+          </li>
+
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-bell"></i>
+              <span class="menu-title">Notification</span>
+
+            </a>
+          </li>
+
+
+
+
+          <li class="nav-item logout-tab">
+            <a class="nav-link" href="#">
+              <i class="bi bi-box-arrow-right"></i>
+              <span class="menu-title">Logout</span>
+
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="page-header">
+            <h1 class="user-name-show">Hi <span>Emma,</span> <br>Welcome Back!</h1>
+
+          </div>
+          <div class="container participated-tab">
+            <div class="row">
+              <div class="col-lg-6 participated-tab-left">
+                <div class="left-side-level-img">
+                  <img src="assets/images/participate-image-dashboard.png" alt="image">
+                  <p>Level <span>5 Racer</span></p>
+                </div>
+
+                <div class="participated-races-right">
+                  <p>Participated in <span>35</span> Races</p>
+                  <div class="inner-top-img">
+                    <img class="first-img-group" src="assets/images/group-right-img.png" alt="image">
+
+                    <div class="conic-progress" aria-label="Progress 98 percent" role="img">
+                      <div class="inner">100%</div>
+                    </div>
+
+                    <img class="two-img-group" src="assets/images/group-left-img.png" alt="image">
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-lg-6 participated-tab-right">
+                <div class="guesse-left">
+                  <p>Made <span>250</span> Guesses</p>
+                  <img src="assets/images/total-image-dashboard.png" alt="image">
+                  <p class="total-guess-text">Total Guesses: <span>250</span></p>
+                </div>
+
+                <div class="guesse-right">
+                  <img src="assets/images/Neon-data.png" alt="image">
+                  <p>Guesses Power: <span>HIGH</span></p>
+
+                </div>
+
+
+              </div>
+            </div>
+
+
+
+            <div class="row second-row-add">
+              <div class="col-lg-6 participated-tab-left">
+                <div class="left-image-side">
+                  <img src="assets/images/right-image-dashboard.png" alt="image">
+                </div>
+                <div class="progress-tab-add">
+                  <p><span>35</span> Lessons completed</p>
+
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 35%;">
+
+                    </div>
+                  </div>
+                  <div class="win-img-add">
+                    <p class="accuracy-boost-text">Accuracy Boost: <span>Active</span></p>
+                    <img src="assets/images/win-img.png">
+                  </div>
+
+                </div>
+              </div>
+
+
+              <div class="col-lg-6 participated-tab-right">
+                <div class="accuracy-img-add-left">
+                  <img src="assets/images/accuracy-image-dashboard.png">
+                </div>
+                <div class="accuracy-img-add-right">
+                  <p>Accuracy of your Last Guess:</p>
+                  <span class="nubmer-value-add">98%</span>
+                  <p>Your overall Accuracy:</p>
+                </div>
+                <div class="conic-progress" aria-label="Progress 98 percent" role="img">
+                  <div class="inner">98%</div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="join-race-btn">
+              <a href="#" class="join-btn">Join a Race</a>
+              <a href="#" class="my-race-btn">My Races</a>
+            </div>
+
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <script src="assets/vendors/chart.js/chart.umd.js"></script>
+  <script src="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="assets/js/off-canvas.js"></script>
+  <script src="assets/js/misc.js"></script>
+  <script src="assets/js/settings.js"></script>
+  <script src="assets/js/todolist.js"></script>
+  <script src="assets/js/jquery.cookie.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page -->
+  <script src="assets/js/dashboard.js"></script>
+  <!-- End custom js for this page -->
+</body>
+
+</html>
