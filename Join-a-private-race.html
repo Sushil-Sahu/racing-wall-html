@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Join a Private Race</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/vendors/ti-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css">
+    <!-- endinject -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+    rel="stylesheet" />
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="/Join-private-race.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="assets/images/Logo-final.png" />
+  </head>
+  <body>
+    <div class="container-scroller">
+
+      <!-- partial:partials/_navbar.html -->
+      <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row dashboard-top-nav-add">
+        <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
+          <a class="navbar-brand brand-logo" href="#">
+            <img src="assets/images/Logo-user-img.png" alt="logo" /></a>
+          <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/Logo-final.png" alt="logo" /></a>
+        </div>
+        <div class="navbar-menu-wrapper d-flex align-items-stretch">
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+            <span class="mdi mdi-menu"></span>
+          </button>
+
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">How to Play</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">How to Win</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
+          </ul>
+          
+          <ul class="navbar-nav navbar-nav-right">
+         
+            <li class="chips-points-add">
+              <span class="badge coin-pill d-inline-flex align-items-center gap-2 p-2">
+                <a href="#"><img src="assets/images/Logo-final.png"> <span class="number-add">350</span></a>
+               </span>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
+                <i class="mdi mdi-bell-outline"></i>
+                <span class="count-symbol bg-danger"></span>
+              </a>
+
+            </li>
+            <li class="nav-item nav-profile dropdown">
+              <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="nav-profile-img">
+                  <img src="assets/images/top-right-img.png" alt="image">
+                </div>
+                <div class="nav-profile-text">
+                  <p class="mb-1 text-black">Emma</p>
+                </div>
+              </a>
+              <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
+                <a class="dropdown-item" href="#">
+                  <i class="mdi mdi-cached me-2 text-success"></i> Activity Log </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">
+                  <i class="mdi mdi-logout me-2 text-primary"></i> Signout </a>
+              </div>
+            </li>
+
+
+          </ul>
+
+          
+          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+            <span class="mdi mdi-menu"></span>
+          </button>
+        </div>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas dashboard-side-bar-add" id="sidebar">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="mdi mdi-home menu-icon"></i>
+                <span class="menu-title">Dashboard</span>
+                
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="mdi mdi-home menu-icon"></i>
+                <span class="menu-title">Leaderboard</span>
+                
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="mdi mdi-home menu-icon"></i>
+                <span class="menu-title">Join a Race</span>
+              </a>
+            </li>
+
+            <li class="nav-item private-tab-add">
+              <div class="private-tab">
+                <div>
+              <a class="nav-link ui-basic-add" data-bs-toggle="collapse" href="#" aria-expanded="false" aria-controls="ui-basic">
+                <i class="mdi mdi-home menu-icon"></i>
+                <span class="menu-title">Private Race</span>
+              </div>
+              <div>
+                <i class="menu-arrow"></i>
+              </div>
+              </div>
+              </a>
+              <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Create Your Own Private Race</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Join a Private Race</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Manage Your Private Races</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="mdi mdi-home menu-icon"></i>
+                <span class="menu-title">Learn to Earn Racing Chips</span>
+                
+              </a>
+            </li>
+
+
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="mdi mdi-home menu-icon"></i>
+                <span class="menu-title">Invite Friends, Earn Racing Chips</span>
+                
+              </a>
+            </li>
+
+
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="mdi mdi-home menu-icon"></i>
+                <span class="menu-title">Notification</span>
+               
+              </a>
+            </li>
+
+
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="mdi mdi-home menu-icon"></i>
+                <span class="menu-title">Logout</span>
+                
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="page-header">
+                 <h1 class="user-name-show"><span>Join a Private Race</span></h1>
+
+            </div>
+            <div class="container">
+              <div class="row">
+				<!-- Card 1 -->
+					<div class="col-md-4 japr">
+					  <div class="custom-card text-white h-100">
+						<h5 class="fw-bold mt-0 mb-0">Best Buddies</h5>
+						<p class="small mt-0 mb-3">By John Doe</p>
+
+						<p class="fst-italic mt-0 mb-4">
+						  “Daily - SPX (S&amp;P 500) - Guess the Close”
+						</p>
+
+						<div class="mt-auto">
+						  <button class="btn btn-join w-100 mb-3">Join</button>
+						  <button class="btn btn-decline w-100">
+							✕ Decline
+						  </button>
+						</div>
+					  </div>
+					</div>
+
+					<!-- Card 2 -->
+					<div class="col-md-4 japr">
+					  <div class="custom-card text-white h-100">
+						<h5 class="fw-bold mt-0 mb-0">MSF683</h5>
+						<p class="small mt-0 mb-3">By John Doe</p>
+
+						<p class="fst-italic mt-0 mb-4">
+						  “Weekly - RUT (Russell 2000) - Guess the Close”
+						</p>
+
+						<div class="mt-auto">
+						  <button class="btn btn-join w-100 mb-3">Join</button>
+						  <button class="btn btn-decline w-100">
+							✕ Decline
+						  </button>
+						</div>
+					  </div>
+					</div>
+
+					<!-- Card 3 -->
+					<div class="col-md-4 japr">
+					  <div class="custom-card text-white h-100">
+						<h5 class="fw-bold mt-0 mb-0">MSF751</h5>
+						<p class="small mt-0 mb-3">By John Doe</p>
+
+						<p class="fst-italic mt-0 mb-4">
+						  “Monthly - DJI (Dow Jones Ind. Avg.) - Guess the Close”
+						</p>
+
+						<div class="mt-auto">
+						  <button class="btn btn-join w-100 mb-3">Join</button>
+						  <button class="btn btn-decline w-100">
+							✕ Decline
+						  </button>
+						</div>
+					  </div>
+					</div>
+			  </div>
+			</div>
+          <!-- content-wrapper ends -->
+          <!-- partial:partials/_footer.html -->
+
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="assets/vendors/chart.js/chart.umd.js"></script>
+    <script src="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="assets/js/off-canvas.js"></script>
+    <script src="assets/js/misc.js"></script>
+    <script src="assets/js/settings.js"></script>
+    <script src="assets/js/todolist.js"></script>
+    <script src="assets/js/jquery.cookie.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="assets/js/dashboard.js"></script>
+    <!-- End custom js for this page -->
+	
+	<script>
+$(document).on('click', '.btn-decline', function () {
+    const card = $(this).closest('.japr');
+    card.fadeOut(300, function () {
+        $(this).remove();
+    });
+});
+</script>
+	
+  </body>
+</html>
