@@ -1,0 +1,1197 @@
+/* dashboard-page-css */
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.dashboard-nav-add-top {
+    background: #191970;
+    height: 86px;
+}
+
+.dashboard-nav-add-top a.navbar-brand.fw-bold img {
+    width: 68px;
+}
+
+.dashboard-nav-add-top .navbar .nav-link {
+    color: var(--rw-muted);
+}
+
+.dashboard-nav-add-top .navbar .nav-link:hover {
+    color: var(--rw-text);
+}
+
+.dashboard-nav-add-top ul.navbar-nav.me-auto {
+    margin: auto;
+    gap: 45px;
+    margin-top: 0px;
+}
+
+.dashboard-nav-add-top a.nav-link {
+    color: #fff;
+    font-weight: 600;
+}
+
+.dashboard-nav-add-top a.nav-link:hover {
+    color: #F76B10;
+}
+
+.dash-nav-right-side .coin-pill img {
+    width: 45px;
+}
+
+.notification i.bi.bi-bell {
+    color: #fff;
+}
+
+.dash-nav-right-side .coin-pill a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.dashboard-nav-add-top a.navbar-brand.fw-bold {
+    width: 244px;
+    border-right: solid 1px #F76B10;
+}
+
+.dash-nav-right-side button.btn.btn-sm.btn-outline-light.dropdown-toggle {
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: none;
+    color: #fff;
+}
+
+.dash-nav-right-side button.btn.btn-sm.btn-outline-light.dropdown-toggle:hover {
+    background: none;
+    color: #fff;
+}
+
+.dash-nav-right-side i.bi.bi-person-circle.me-1 {
+    font-size: 40px;
+}
+
+.dash-nav-right-side {
+    gap: 15px !important;
+}
+
+.layout-sidebar-dash {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 0;
+    min-height: calc(100vh - 64px);
+}
+
+aside.sidebar.dashboard-side-bar-add {
+    background: #191970;
+    border-right: 1px solid #F76B10;
+    padding: 16px;
+    position: sticky;
+    top: 64px;
+    overflow-y: auto;
+}
+
+.sidebar.dashboard-side-bar-add .list-group-item.active {
+    border: none;
+    border-radius: 12px;
+}
+
+ul.list-group.side-bar-menu-list {
+    line-height: 3.2;
+}
+
+ul.list-group.side-bar-menu-list li a {
+    color: #fff !important;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    padding: 0px 15px;
+    font-weight: 400 !important;
+}
+
+ul.list-group.side-bar-menu-list li a:hover {
+    background: #F76B10;
+}
+
+main.main-content {
+    background: linear-gradient(to top, #001127, #041A63);
+    padding: 40px;
+    border-top: solid 1px #F76B10;
+}
+
+
+
+
+.card-rw {
+    background: radial-gradient(1200px 400px at 20% 0%, rgba(79, 140, 255, 0.1) 0%, transparent 60%) var(--rw-surface-2);
+    border: 1px solid #222a4d;
+    color: var(--rw-text);
+    border-radius: 16px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+.metric-label {
+    color: var(--rw-muted);
+    font-size: 0.9rem;
+}
+
+.metric-value {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.badge-level {
+    background: linear-gradient(90deg, #7b61ff, #4f8cff);
+    color: #fff;
+    border: 0;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    box-shadow: 0 4px 12px rgba(79, 140, 255, 0.35);
+}
+
+.panel-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #121936;
+    color: var(--rw-primary);
+    margin-right: 12px;
+}
+
+.spark {
+    height: 56px;
+    background:
+        linear-gradient(180deg, rgba(79, 140, 255, 0.25) 0%, rgba(79, 140, 255, 0) 100%),
+        repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.06) 0 2px, transparent 2px 4px);
+    border-radius: 10px;
+    border: 1px dashed #2b3665;
+}
+
+.target {
+    position: relative;
+    width: 100%;
+    max-width: 160px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: conic-gradient(from 270deg, #25d366 0 70%, #263058 70% 100%);
+    margin-left: auto;
+    border: 6px solid #121936;
+    box-shadow: inset 0 0 0 8px #0d1330, 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.target::after {
+    content: "";
+    position: absolute;
+    inset: 22%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 40% 40%, #ffffff 0%, #7b61ff 25%, #121936 60%, transparent 100%);
+    border: 2px solid #2b3665;
+}
+
+.btn-rw {
+    background: linear-gradient(90deg, #4f8cff, #7b61ff);
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 18px;
+    font-weight: 600;
+    box-shadow: 0 8px 18px rgba(79, 140, 255, 0.35);
+}
+
+.btn-rw.secondary {
+    background: #121936;
+    color: var(--rw-text);
+    border: 1px solid #2b3665;
+    box-shadow: none;
+}
+
+.subnav {
+    font-size: 0.88rem;
+    color: var(--rw-muted);
+    margin-top: 6px;
+}
+
+
+/* profile-page-css */
+
+
+.profile-content-add {
+    border: solid 2px #F76B10;
+    border-radius: 32px;
+    padding: 0px;
+    box-shadow: 0px 0px 20.7px 7px rgba(247, 107, 16, 0.5);
+}
+
+/* .profile-content-add {
+    border: solid 2px #F76B10;
+    border-radius: 32px;
+    padding: 0px;
+    box-shadow:
+        0px 0px 20.7px 7px rgba(247, 107, 16, 0.5), 
+        0px 8px 0px 0px #F76B10,                     
+        0px 16px 0px 0px #FF8C42,                   
+        0px 24px 0px 0px #FFA96B;                  
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+} */
+
+.profile-content-add img.image-banner {
+    width: 100%;
+    margin-top: 0px;
+    border-radius: 32px 32px 0px 0px;
+}
+
+.profile-actions button {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.profile-content-add .edit-btn {
+    color: white;
+    background: linear-gradient(to right, #FF6A00, #FFB347);
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+.profile-content-add .delete-btn {
+    color: white;
+    background: linear-gradient(to right, #FF6A00, #FFB347);
+    border-radius: 50px;
+    padding: 10px 18px;
+}
+
+.profile-content-add .inner-card {
+    padding-top: 0px;
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    color: #fff;
+    justify-content: space-around;
+    margin-top: -18px;
+    width: 77%;
+}
+
+.profile-content-add p {
+    line-height: 0.6;
+}
+
+.profile-content-add h2.username {
+    margin: 0px;
+    font-size: 18px;
+}
+
+.profile-content-add .user-detail-add {
+    padding-left: 20px;
+    margin-top: -22px;
+    padding-right: 10px;
+}
+
+.profile-content-add i.bi.bi-person-circle {
+    font-size: 48px;
+    opacity: 0.9;
+}
+
+.profile-content-add .user-detail-add p.joined-date {
+    color: #788FAC;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 5px;
+}
+
+.profile-content-add p.email-type {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.profile-content-add input[type="email"] {
+    background: none;
+    border: none;
+    color: #fff;
+}
+
+.profile-info input[type="text"] {
+    border: none;
+    background: none;
+    line-height: 2.5;
+    color: #fff;
+}
+
+.profile-content-add i.bi.bi-envelope {
+    background: #1D2751;
+    border-radius: 50px;
+    padding: 11px 13px;
+    color: #788FAC;
+    font-size: 18px;
+}
+
+.profile-content-add i.bi.bi-person {
+    background: #1D2751;
+    border-radius: 50px;
+    padding: 11px 13px;
+    color: #788FAC;
+    font-size: 20px;
+}
+
+.profile-content-add .profile-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 72%;
+    padding-top: 20px;
+}
+
+.profile-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.profile-content-add .rank-section {
+    border: solid 2px #15417B;
+    width: 50%;
+    margin: 30px 30px;
+    padding: 0 20px;
+    border-radius: 20px;
+    color: #fff;
+    background: #1D2751;
+}
+
+.profile-content-add .rank-section p {
+    line-height: 1.5;
+}
+
+.profile-content-add .rank-section h3 {
+    font-size: 18px;
+    color: #7286CD;
+}
+
+.profile-content-add p.rank-number {
+    color: #F76B10;
+}
+
+.profile-content-add .inner-card strong {
+    color: #788FAC;
+}
+
+.profile-content-enter-add {
+    display: flex;
+    align-items: center;
+}
+
+.profile-king-add {
+    margin-top: 60px;
+}
+
+.profile-king-add p {
+    font-size: 22px;
+    color: #fff;
+}
+
+.four-achievements .first-trophy {
+    padding: 20px 10px;
+    border: 2px solid rgb(247, 107, 16);
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20.7px 7px rgba(247, 107, 16, 0.5);
+}
+
+.four-achievements {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.four-achievements p {
+    font-size: 16px;
+    margin: 0px;
+    font-weight: 600;
+}
+
+.four-achievements img {
+    width: 40px;
+}
+
+.user-profile-edit-right .card-custom {
+    background: rgb(9, 29, 95);
+    border: 2px solid rgb(247, 107, 16);
+    border-radius: 16px;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 20.7px 7px rgba(247, 107, 16, 0.5);
+}
+
+.user-profile-edit-right .card-header-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+.user-profile-edit-right .chip-count {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.user-profile-edit-right .btn-orange {
+    background: linear-gradient(90deg, #F76B10, #FFA647);
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 14px 10px;
+}
+
+.user-profile-edit-right .btn-orange:hover {
+    opacity: 0.9;
+}
+
+.user-profile-edit-right .sub-card {
+    background: #0b2a6b;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.user-profile-edit-right .amount {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.user-profile-edit-right .amount span {
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+.user-profile-edit-right .invite-img {
+    max-width: 120px;
+    margin: 0 auto;
+    display: block;
+}
+
+.user-profile-edit-right .small-text {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.user-profile-edit-right span.chips-text {
+    color: #7286CD;
+    font-weight: 600;
+}
+
+.user-profile-edit-right .sub-card strong {
+    color: #7286CD;
+    line-height: 1.5;
+}
+
+.user-profile-edit-right .card-custom.text-center h6 {
+    margin: 0px;
+}
+
+.user-profile-edit-right .winner-images-add {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 22px;
+}
+
+.user-profile-edit-right img.first-img-add {
+    width: 60px;
+    height: 60px;
+}
+
+.user-profile-edit-right img.second-img-add {
+    width: 100px;
+    margin-top: -60px;
+}
+
+.user-profile-edit-right img.third-img-add {
+    width: 60px;
+    height: 60px;
+}
+
+.user-profile-edit-right .card-custom.text-center.winner-content-add {
+    margin-top: 55px !important;
+}
+
+.user-profile-edit-right img.second-img-add {
+    width: 100px;
+    margin-top: -60px;
+}
+
+.gift-section-add {
+    display: flex;
+    contain: content;
+    gap: 6px;
+}
+
+
+.gift-section-add img {
+    border-radius: 4px;
+}
+
+.winner-content-add p.small-text {
+    color: #7286CD;
+}
+
+.profile-content-add .edit-btn:hover {
+    opacity: 0.9;
+}
+
+.profile-content-add .delete-btn:hover {
+    opacity: 0.9;
+}
+
+.profile-content-add .profile-info p {
+    display: flex;
+    flex-direction: column;
+}
+
+.first-trophy.forth-trophy {
+    box-shadow: none;
+    border: 2px solid #15417B;
+}
+
+
+/* edit-profile-css-start */
+
+p.profile-make-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.edit-profile-add-content .user-detail-add {
+    width: 68%;
+}
+
+h1.inner-heading {
+    background: -webkit-linear-gradient(#F76B10, #FFA647);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 0px;
+    padding-bottom: 10px;
+}
+
+.edit-profile-card button.btn.btn-save {
+    color: white;
+    background: linear-gradient(to right, #FF6A00, #FFB347);
+    border-radius: 50px;
+    padding: 12px 18px;
+    margin: 8px 0px;
+}
+
+.edit-profile-card {
+    padding: 20px 25px;
+}
+
+.edit-profile-card label.form-label {
+    color: #788FAC;
+    font-weight: 600;
+}
+
+.edit-profile-card input.form-control {
+    background: none;
+    border: none;
+    color: #fff;
+    padding-left: 0;
+}
+
+.edit-user-input {
+    border-bottom: solid 1px #F76B10;
+}
+
+.edit-profile-card button.btn.btn-save:hover {
+    opacity: 0.9;
+}
+
+i.bi.bi-pencil-square {
+    padding-right: 4px;
+}
+
+
+
+
+/* my-races-ongoing-page-css */
+
+.race-card.active {
+    border-left: 5px solid orange;
+}
+
+.race-card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.stats-box {
+    background-color: #e9ecef;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.my-races-tabs .card {
+    background: none;
+}
+
+.my-races-tabs {
+    padding: 0px;
+}
+
+.nav.nav-tabs.mb-3 {
+    border-bottom: solid 1px #F76B10;
+    font-weight: 600;
+}
+
+.my-races-tabs button.nav-link {
+    width: 50%;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Lato", sans-serif !important;
+}
+.my-races-tabs button.nav-link.active {
+    color: white;
+    background: linear-gradient(to right, #FF6A00, #FFB347);
+    border-radius: 10px 10px 0px 0px;
+    padding: 14px 18px;
+    width: 100%;
+}
+
+.my-races-tabs button.nav-link {
+    color: white;
+    padding: 14px 18px;
+    width: 100%;
+}
+
+.my-races-tabs li.nav-item {
+    width: 50%;
+}
+
+.my-races-tabs .tab-content {
+    border: solid 2px #F76B10 !important;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20.7px 7px rgba(247, 107, 16, 0.5);
+    width: 94%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.my-races-race-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 30px;
+}
+
+.my-races-race-btn a.my-guess {
+    border: solid 2px #FF6A00;
+    padding: 11px 30px;
+    border-radius: 12px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.my-races-race-btn a.Leaderboard {
+    border: solid 2px #194C8E;
+    padding: 11px 30px;
+    border-radius: 12px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.my-races-tabs ul.guess-list {
+    list-style: none;
+    color: #fff;
+}
+
+.my-races-tabs ul.guess-list li {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 15px;
+}
+
+.my-races-tabs ul.guess-list span.text {
+    font-size: 15px;
+}
+
+.my-races-tabs ul.guess-list .round {
+    position: relative;
+    padding-top: 8px;
+    margin-top: 0px;
+}
+
+.my-races-tabs ul.guess-list .round label {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 22px;
+    left: -20px;
+    position: absolute;
+    width: 22px;
+}
+
+.my-races-tabs ul.guess-list .round label:after {
+    border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    content: "";
+    height: 6px;
+    left: 4px;
+    opacity: 0;
+    position: absolute;
+    top: 6px;
+    transform: rotate(-45deg);
+    width: 12px;
+}
+
+.my-races-tabs ul.guess-list .round input[type="checkbox"] {
+    visibility: hidden;
+}
+
+.my-races-tabs ul.guess-list .round input[type="checkbox"]:checked+label {
+    background-color: #F76B10;
+    border-color: #F76B10;
+}
+
+.my-races-tabs ul.guess-list .round input[type="checkbox"]:checked+label:after {
+    opacity: 1;
+}
+
+.user-statistics {
+    padding: 0px;
+    margin-top: 15px;
+    padding-bottom: 25px;
+}
+
+.my-races-right-content {
+    margin-top: 60px;
+}
+
+.user-statistics h5 {
+    color: #fff;
+    margin: 0px;
+}
+.user-statistics .user-races {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    gap: 15px;
+    padding: 0px 20px;
+}
+
+.user-statistics .user-races h3 {
+    margin-bottom: 0px;
+}
+
+.user-statistics .user-races p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.guess-accuracy-center {
+    text-align: center;
+}
+
+.guess-accuracy-center h3 {
+    color: #65A326;
+    margin-bottom: 0;
+}
+
+.guess-accuracy-center p {
+    margin: 0px;
+    color: #fff;
+}
+
+.center-line-add {
+    border: solid 1px;
+    height: 50px;
+    margin-top: 18px;
+}
+
+.user-races-right {
+    width: 45%;
+}
+
+.user-races-left {
+    width: 45%;
+}
+
+/* join-race-page-css */
+
+
+/*Join a Private Race*/
+
+.custom-card {
+    background-color: #0b1d4a;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #F76B10;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20.7px 7px rgba(247, 107, 16, 0.5);
+}
+
+.btn-join {
+    background: linear-gradient(100deg, #F76B10, #FFA647);
+    color: #fff;
+    border-radius: 50px;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+}
+
+.btn-join:hover {
+    opacity: 0.9;
+}
+
+.page-header h1.user-name-show span {
+    background: -webkit-linear-gradient(#F76B10, #FFA647);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-decline {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #ff7a00;
+    border-radius: 50px;
+    padding: 16px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.btn-decline:hover {
+    background-color: rgba(255, 122, 0, 0.1);
+    color: #fff;
+}
+
+.custom-card h5,
+p {
+    color: #ffffff;
+}
+
+
+
+/* join-race-daily-page-css */
+
+
+
+.d-block-top {
+    display: block !important;
+}
+
+.d-block-top p {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.race-panel .race--info {
+    position: absolute;
+    top: 160px;
+    left: 300px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.join-race-sidebar {
+    margin-top: 80px;
+}
+
+.join-race-tabs {
+    margin-top: 60px;
+}
+
+.summary-cont ul li {
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+
+
+/* join-a-race-page-css */
+.race-panel .nav-tabs .nav-link {
+
+    border-radius: 8px;
+
+    border: none;
+
+}
+
+.race-panel .nav-tabs .nav-link.active {
+
+    background: linear-gradient(100deg, #F76B10, #FFA647);
+
+    color: #fff;
+
+}
+
+.summary-cont span {
+
+    font-weight: 600;
+
+}
+
+.race-card {
+
+    background: #142352;
+
+    border-radius: 12px;
+
+    padding: 50px;
+
+    text-align: center;
+
+    color: #fff;
+
+    cursor: pointer;
+
+    border: 1px solid transparent;
+
+}
+
+.race-card.active,
+
+.race-card:hover {
+
+    border: 1px solid #F76B10;
+
+    border-radius: 12px;
+
+    box-shadow: 0px 0px 20.7px 7px rgba(247, 107, 16, 0.5);
+
+}
+
+
+.race-input {
+
+    background: transparent;
+
+    border: 1px solid #d7d7d7;
+
+    color: #fff;
+
+    border-radius: 12px;
+
+    width: 50%;
+
+}
+
+.summary-box {
+
+    background: #142352;
+
+    color: #fff;
+
+    border-radius: 16px;
+
+    border: 1px solid #F76B10;
+
+}
+
+.summary-cont {
+
+    padding: 16px;
+
+}
+
+.summary-box p {
+
+    margin-top: 0px;
+
+}
+
+.summary-box h5 {
+    color: #fff;
+    margin: 0px;
+}
+
+.bg-grad {
+    padding: 20px;
+    background: linear-gradient(100deg, #F76B10, #FFA647);
+    color: #fff;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+ul#raceTabs {
+    border-bottom: 1px solid #F76B10;
+    margin-top: 0px;
+}
+
+.race-panel .nav-tabs {
+    display: flex;
+    gap: 0;
+    /* no space between tabs */
+}
+
+.race-panel .nav-tabs .nav-item {
+    flex: 1;
+}
+
+.race-panel .nav-tabs .nav-link {
+    width: 100%;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+    margin-right: 0;
+    padding: 14px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0px;
+    font-family: "Lato", sans-serif;
+    cursor: pointer;
+}
+
+.race-panel .tab-content h6.text-white {
+    color: #ffffff !important;
+}
+
+.race-panel .tab-content {
+    padding: 5px 20px;
+}
+
+.text-white {
+    color: #ffffff !important;
+}
+
+.race-input:focus {
+    color: #ffffff !important;
+    background: transparent;
+    border: 1px solid #d7d7d7;
+}
+
+.btn.race-input-btn {
+    background: linear-gradient(90deg, #ff7a18, #ffb347);
+    color: #fff;
+    border-radius: 32px;
+    font-weight: 600;
+    margin: 0 auto;
+    display: flex;
+}
+
+.race-card h4 {
+
+    font-size: 28px;
+
+    font-weight: 800;
+
+    margin-bottom: 0px;
+
+    margin-top: 0px;
+
+}
+
+.race-card h6 {
+
+    margin-bottom: 0px;
+
+    margin-top: 0px;
+
+}
+
+.custom-card h5 {
+
+    font-size: 24px;
+
+}
+
+.custom-card p {
+
+    font-size: 16px;
+
+}
+
+/*Join a Race*/
+
+.d-block-top {
+
+    display: block !important;
+
+}
+
+.d-block-top p {
+
+    font-weight: 600;
+
+    font-size: 18px;
+
+    line-height: 26px;
+
+}
+
+.race-panel .race--info {
+
+    position: absolute;
+
+    top: 160px;
+
+    left: 300px;
+
+    font-weight: 600;
+
+    font-size: 18px;
+
+    line-height: 22px;
+
+}
+
+.join-race-sidebar {
+
+    margin-top: 80px;
+
+}
+
+.join-race-tabs {
+
+    margin-top: 60px;
+
+}
+
+.summary-cont ul li {
+
+    line-height: 20px;
+
+    margin-bottom: 5px;
+
+}
+
+.summary-cont ul {
+
+    margin-top: 0px;
+
+}
+
+.bx-shd {
+    border: 1px solid #F76B10;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20.7px 7px rgba(247, 107, 16, 0.5);
+}
