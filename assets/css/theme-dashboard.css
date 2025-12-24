@@ -17037,13 +17037,12 @@ a.navbar-brand.brand-logo img {
 }
 
 .sidebar .nav {
-  overflow-y: scroll;
+  overflow: hidden;
   flex-wrap: nowrap;
   flex-direction: column;
   margin-bottom: 60px;
   font-family: "Lato" !important;
   padding: 0px 20px;
-  height: 50%;
 }
 .sidebar .nav::-webkit-scrollbar {
   width: 10px;
