@@ -1,0 +1,258 @@
+<doctype html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <title>Contact Us</title>
+
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+            <link
+                href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+                rel="stylesheet"
+            />
+
+            <link
+                href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+                rel="stylesheet"
+            />
+
+            <link rel="stylesheet" href="./assets/css/home.css" />
+			<link rel="stylesheet" href="./assets/css/header.css" />
+			<link rel="stylesheet" href="/custom.css" />
+        </head>
+
+        <body>
+            <!-- NAVBAR -->
+            <nav class="navbar navbar-expand-lg bg-white py-3">
+                <div class="container">
+                    <a class="navbar-brand logo-top-menu" href="#">
+						<img src="./assets/images/user-dashboard-login.png" alt="logo" />
+					</a>
+
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navMenu">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">How to Play</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">How to Win</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
+                        </ul>
+
+                        <div class="d-flex gap-2 login-sign-btn">
+                            <a href="#" class="btn sign-up-btn">
+                                <img src="./assets/images/icon.png" alt="icon" />
+                                <span class="inner-sign-text">Sign up</span> /
+                                <span class="inner-login-text">Login</span>
+                            </a>
+
+                            <a href="#" class="btn join-btn"
+                                ><i class="bi bi-plus-circle"></i> <span>Join a Race</span></a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+			<!-- <section class="page-title">
+				<div class="pattern-layer-one"></div>
+				<div class="auto-container">
+					<h2>Contact us</h2>
+				</div>
+			</section> -->
+			
+			
+			<div class="contact-style-one-area overflow-hidden default-padding">
+
+        
+       
+        <div class="container">
+            <div class="row align-center">
+
+                <div class="contact-stye-one col-lg-5 mb-md-50 mb-xs-20">
+
+                    <div class="contact-style-one-info">
+                        <h2 class="split-text">Contact Information</h2>
+                        <p class="wow fadeInUp">
+                            Please feel free to reach out to us with any inquiries or support needs. Our team will respond promptly.
+                        </p>
+                        <ul>
+                            <li class="wow fadeInUp">
+                                <div class="icon">
+                                    <i class="bi bi-telephone"></i>
+                                </div>
+                                <div class="content">
+                                    <h5 class="title">Hotline</h5>
+                                    <a href="">+0123456789</a>
+                                </div>
+                            </li>
+                            <li class="wow fadeInUp">
+                                <div class="icon">
+                                    <i class="bi bi-geo-alt"></i>
+                                </div>
+                                <div class="info">
+                                    <h5 class="title">Our Location</h5>
+                                    <p>
+                                        Address Will Goes Here
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="wow fadeInUp">
+                                <div class="icon">
+                                    <i class="bi bi-envelope"></i>
+                                </div>
+                                <div class="info">
+                                    <h5 class="title">Official Email</h5>
+                                    <a href="mailto:info@racingwallstreet.com">info@racingwallstreet.com</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="contact-stye-one col-lg-7 pl-60 pl-md-15 pl-xs-15">
+                    <div class="contact-form-style-one">
+                        <h5 class="sub-title">Have Questions?</h5>
+                        <h2 class="title">Send us a Massage</h2>
+                        <form action="assets/mail/contact.php" method="POST" class="contact-form contact-form">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <input class="form-control" id="name" name="name" placeholder="Name" type="text">
+                                        <span class="alert-error"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input class="form-control" id="email" name="email" placeholder="Email*" type="email">
+                                        <span class="alert-error"></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input class="form-control" id="phone" name="phone" placeholder="Phone" type="text">
+                                        <span class="alert-error"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group comments">
+                                        <textarea class="form-control" id="comments" name="comments" placeholder="Subject"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 sub--btn">
+                                    <button type="submit" name="submit" id="submit">
+                                        <i class="bi bi-send"></i> Send
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Alert Message -->
+                            <div class="col-lg-12 alert-notification">
+                                <div id="message" class="alert-msg"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+            <!-- FOOTER -->
+            <footer class="footer-wall-street">
+                <div class="container">
+              
+                  <div class="row">
+              
+                    <!-- Logo + Text -->
+                    <div class="col-md-6 mb-5 footer-left-one">
+                        <a class="navbar-brand brand-logo" href="/">
+							<img src="./assets/images/user-dashboard-logo.png" class="img-fluid mb-1">
+                        </a>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      </p>
+              
+                      <!-- Social Icons -->
+                      <div class="d-flex gap-3 mt-3">
+                        <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-twitter-x"></i></a>
+                      </div>
+                    </div>
+              
+                    <!-- Links -->
+                    <div class="col-md-2 mb-4 footer-left-two">
+                      <h6 class="fw-bold">Links</h6>
+                      <ul class="list-unstyled footer-links">
+                        <li><a href="#" class="`text-decoration-none">How to Play</a></li>
+                        <li><a href="#" class="`text-decoration-none">How to Win</a></li>
+                        <li><a href="#" class="`text-decoration-none">Leaderboard</a></li>
+                        <li><a href="#" class="`text-decoration-none">Create a Private Race</a></li>
+                        <li><a href="#" class="`text-decoration-none">Join a Private Race</a></li>
+                      </ul>
+                    </div>
+              
+                    <!-- Other Pages -->
+                    <div class="col-md-2 mb-4 footer-left-three">
+                      <h6 class="fw-bold">Other Pages</h6>
+                      <ul class="list-unstyled footer-links">
+                        <li><a href="#" class="text-decoration-none">Learn to Earn Racing Chips</a></li>
+                        <li><a href="#" class="text-decoration-none">Invite Friends, Earn Racing Chips</a></li>
+                        <li><a href="#" class="text-decoration-none">Manage My Private Races</a></li>
+                        <li><a href="#" class="text-decoration-none">Purchase Racing Chips</a></li>
+                      </ul>
+                    </div>
+              
+                    <!-- App Download -->
+                    <div class="col-md-2 mb-4 footer-left-four">
+                      <h6 class="fw-bold">Download app</h6>
+              
+                      <a href="#">
+                        <img src="./assets/images/footer-app.png" class="img-fluid mb-1" style="max-width:130px;">
+                      </a>
+                      <br>
+                      <a href="#">
+                        <img src="./assets/images/footer-google.png" class="img-fluid" style="max-width:130px;">
+                      </a>
+                    </div>
+              
+                  </div>
+              
+ 
+              
+            
+              
+                </div>
+                <hr class="border-light mt-4">
+                <div class="text-center small text-white-50 mt-3">
+                    Copyright ©2025 Racing Wall Street. All rights reserved
+                  </div>
+        
+            </footer>
+        
+
+
+
+            <!-- Bootstrap JS -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        </body>
+    </html>
+</doctype>
