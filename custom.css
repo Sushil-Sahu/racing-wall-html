@@ -1359,6 +1359,7 @@ i.bi.bi-pencil-square {
     padding: 14px 18px;
     width: 100%;
     font-size: 15px;
+    cursor: pointer;
 }
 .my-races-tabs button.nav-link.active {
     color: white;
@@ -2956,6 +2957,40 @@ ul.navbar-nav.navbar-nav-right .dropdown-menu.navbar-dropdown.show i {
 button.btn.btn-outline-info.btn-sm.tf-btn.active {
     background: #198ae3;
 }
+
+/* manage-private-race-page-css */
+.manage-my-private ul {
+    padding: 0px 20px;
+    padding-bottom: 10px;
+}
+
+.manage-my-private ul a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    border: solid 1px #F66911;
+    border-radius: 12px;
+    margin-bottom: 14px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.manage-my-private ul {
+    list-style: none;
+}
+.manage-my-private ul a:hover {
+    background: #F66911;
+}
+.manage-my-private {
+    margin-bottom: 0px !important;
+    padding-bottom: 0px;
+    padding-top: 12px;
+}
+
+.manage-my-private-races .my-races-race-btn {
+    margin-top: 60px;
+}
+
 
 
 /* Responsive */
