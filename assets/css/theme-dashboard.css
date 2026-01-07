@@ -18975,7 +18975,7 @@ dl li {
     .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown {
         position: static;
     }
-    .navbar
+    /* .navbar
         .navbar-menu-wrapper
         .navbar-nav
         .nav-item.dropdown
@@ -18984,7 +18984,7 @@ dl li {
         right: 20px;
         top: 70px;
         width: calc(100% - 40px);
-    }
+    } */
 }
 .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-settings {
     padding-left: 20px;
@@ -19399,10 +19399,10 @@ li.nav-item.logout-tab {
 }
 
 li.nav-item.logout-tab i {
-    color: #f76b10 !important;
+    color: #f66911 !important;
 }
 li.nav-item.logout-tab span.menu-title {
-    color: #f76b10 !important;
+    color: #f66911 !important;
 }
 
 .sidebar a.nav-link {
@@ -19937,8 +19937,10 @@ li.nav-item.logout-tab:hover span.menu-title {
         display: none;
     }
     .sidebar-icon-only .main-panel {
-        width: calc(100% - 70px);
+        width: 100%;
     }
+
+
 }
 
 @media (min-width: 992px) {
@@ -20101,7 +20103,7 @@ body {
 
 .dashboard-top-nav-add .navbar-brand-wrapper {
     background: #191970;
-    border-right: solid 1px #f76b10;
+    border-right: solid 1px #f66911;
     height: 80px;
 }
 
@@ -20264,14 +20266,14 @@ a.navbar-brand.brand-logo img {
     font-family: "Lato";
 }
 .navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link:hover {
-    color: #f76b10;
+    color: #f66911;
 }
 
 .sidebar .nav {
     overflow: hidden;
     flex-wrap: nowrap;
     flex-direction: column;
-    margin-bottom: 60px;
+    margin-bottom: 0px;
     font-family: "Lato" !important;
     padding: 0px 20px;
 }
@@ -20304,7 +20306,7 @@ a.nav-link.ui-basic-add {
 }
 nav.sidebar.sidebar-offcanvas.dashboard-side-bar-add {
     padding-top: 10px;
-    border-right: solid 1px #f76b10;
+    border-right: solid 1px #f66911;
 }
 
 .navbar .navbar-menu-wrapper {
@@ -20318,7 +20320,7 @@ nav.sidebar.sidebar-offcanvas.dashboard-side-bar-add {
     width: calc(100% - 260px);
     height: 80px;
     justify-content: space-between;
-    border-bottom: solid 1px #f76b10;
+    border-bottom: solid 1px #f66911;
 }
 
 /*dashboard-content-css-start */
@@ -20660,4 +20662,11 @@ span.nubmer-value-add {
     align-items: center;
     justify-content: center;
     color: #fa7f22;
+}
+
+ #toast-container > .toast {
+    opacity: 1 !important;
+}
+#toast-container > .toast:hover {
+    opacity: 1 !important;
 }
