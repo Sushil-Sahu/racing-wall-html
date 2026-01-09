@@ -1773,7 +1773,7 @@ ul#raceTabs {
 
 .race-panel .tab-content {
     padding: 5px 10px;
-}   
+}
 
 .text-white {
     color: #ffffff !important;
@@ -2181,9 +2181,9 @@ input[type="number"] {
 	color: #ffffff;
     text-decoration: none;
 }
- 
+
 /*Leaderboard Winners Page*/
- 
+
 .wnr-table {
    border-collapse: collapse;
 }
@@ -2333,87 +2333,87 @@ div#ui-basic {
 
 
 
-   
+
   /* Controls */
-  
+
   .notification-page-start .notification-panel .notification-controls {
-  
+
     display: flex;
-  
+
     align-items: center;
-  
+
     gap: 16px;
-  
+
     margin-bottom: 25px;
-  
+
   }
-   
+
   .notification-page-start .notification-panel .tabs {
-  
+
     display: flex;
-  
+
     gap: 8px;
-  
+
   }
-   
+
   .notification-page-start .notification-panel .tab {
-  
+
     background: transparent;
-  
+
     border: 1px solid rgba(255,122,26,.5);
-  
+
     color: #ffb37a;
-  
+
     padding: 8px 18px;
-  
+
     border-radius: 20px;
-  
+
     cursor: pointer;
-  
+
   }
-   
+
   .notification-page-start .notification-panel .tab.active {
-  
+
     background: linear-gradient(90deg, #ff7a1a, #ff9a3c);
-  
+
     color: #fff;
-  
+
     box-shadow: 0 0 15px rgba(255,122,26,.8);
-  
+
   }
-   
+
   .notification-page-start .notification-panel .search-box {
-  
+
     flex: 1;
-  
+
     display: flex;
-  
+
     align-items: center;
-  
+
     background: #061230;
-  
+
     border-radius: 30px;
-  
+
     padding: 10px 16px;
-  
+
     border: 1px solid rgba(255,255,255,.1);
-  
+
   }
-   
+
   .notification-page-start .notification-panel .search-box input {
-  
+
     flex: 1;
-  
+
     background: transparent;
-  
+
     border: none;
-  
+
     color: #fff;
-  
+
     outline: none;
-  
+
     margin-left: 8px;
-  
+
   }
 
   /* List */
@@ -2429,8 +2429,8 @@ div#ui-basic {
     width: 10px;
 }
 
-.notification-page-start 
-.notification-panel 
+.notification-page-start
+.notification-panel
 .notification-list::-webkit-scrollbar-thumb {
     background: linear-gradient(
         180deg,
@@ -2464,13 +2464,13 @@ div#ui-basic {
     align-items: center;
     padding: 5px;
 }
-   
+
 .notification-page-start .notification-panel .notification-row img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
-   
+
  .notification-page-start .notification-panel .notification-row h4 {
     margin: 0;
     font-size: 16px;
@@ -2533,13 +2533,13 @@ div#ui-basic {
     font-size: 14px;
     padding: 8px !important;
 }
-  
+
   .notification-page-start .notification-list {
     list-style: none;
     padding: 0;
     margin: 0;
   }
-  
+
   .notification-page-start .notification-item {
     border-left: 5px solid #ccc;
     background-color: #fafafa;
@@ -2555,19 +2555,19 @@ div#ui-basic {
 .notification-panel::before {
 
     content: "";
-  
+
     position: absolute;
-  
+
     inset: -6px;
-  
+
     border-radius: 26px;
-  
+
     background: linear-gradient(120deg, #ff7a1a, transparent, #ff7a1a);
-  
+
     filter: blur(18px);
-  
+
     z-index: -1;
-  
+
   }
 .notification-page-start .notification-panel button.delete-btn {
     border: none;
@@ -2597,14 +2597,14 @@ div#ui-basic {
     font-size: 16px;
     color: #fff;
 }
-  
+
 .notification-page-start .timestamp {
     display: block;
     margin-top: 3px;
     font-size: 13px;
     color: #dadada;
 }
-  
+
   .notification-page-start .mark-read-btn {
     position: absolute;
     top: 16px;
@@ -2654,7 +2654,7 @@ nav.top-pagination-add ul.pagination {
   .top-pagination-add .pagination {
     gap: 10px;
   }
-  
+
   /* Page Link Base */
   .top-pagination-add .page-link {
     min-width: 40px;
@@ -2671,7 +2671,7 @@ nav.top-pagination-add ul.pagination {
     box-shadow: 0px 0px 20.7px 7px rgb(247 107 16 / 23%);
     border-radius: 10px;
 }
-  
+
   /* Hover Effect */
   .top-pagination-add .page-link:hover {
     background: linear-gradient(100deg, #f76b10, #ffa647);
@@ -2679,21 +2679,21 @@ nav.top-pagination-add ul.pagination {
     transform: translateY(-3px);
     box-shadow: 0 10px 25px rgba(35, 51, 190, 0.35);
 }
-  
+
   /* Active Page */
   .top-pagination-add .page-item.active .page-link {
     background: linear-gradient(135deg, #2333be, #4c5cff);
     color: #fff;
     box-shadow: 0 10px 30px rgba(35, 51, 190, 0.45);
   }
-  
+
   /* Previous & Next Buttons */
   .top-pagination-add .page-item:first-child .page-link,
   .top-pagination-add .page-item:last-child .page-link {
     padding: 0 18px;
     border-radius: 10px;
   }
-  
+
   /* Disabled State */
   .top-pagination-add .page-item.disabled .page-link {
     background: #e5e7eb;
@@ -3012,6 +3012,175 @@ button.btn.btn-outline-info.btn-sm.tf-btn.active {
 }
 
 
+/* Create a Private Race with your friends - Step 2 page css*/
+
+.create-a-private-race-step-two h2 span {
+    font-size: 25px;
+    background: -webkit-linear-gradient(#f76b10, #ffa647);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.create-a-private-race-step-two h2 {
+    font-size: 25px;
+    color: #fff;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.create-a-private-race-step-two .add-players-text h4 {
+    margin-bottom: -6px;
+    color: #F76B10;
+}
+.addresses-separated-tab input.form-control {
+    background: none;
+    border: solid 1px #F76B10;
+    border-radius: 12px;
+}
+
+.addresses-separated-tab .chip-input-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #F76B10;
+    border-radius: 12px;
+    padding: 10px 14px;
+}
+
+.addresses-separated-tab .chip-input-box input{
+    flex:1;
+    background:transparent;
+    border:none;
+    outline:none;
+    color:#fff;
+    font-size:14px;
+}
+
+.addresses-separated-tab .add-btn {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 2px solid #F76B10;
+    color: #F76B10;
+    font-size: 25px;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addresses-separated-tab .chips-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:20px;
+}
+
+.addresses-separated-tab .chip{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    background:#fff;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+}
+
+.addresses-separated-tab .remove-btn{
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    border:1px solid #000;
+    background:#fff;
+    font-size:12px;
+    cursor:pointer;
+}
+.addresses-separated-tab .pill-container {
+    width: 100%;
+}
+
+.addresses-separated-tab .pill-container .col-md-3 {
+    padding: 8px;
+}
+
+.addresses-separated-tab .email-pill {
+    background-color: #E9ECEF;
+    border-radius: 50px;
+    padding: 0px 10px;
+    width: 100%;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}   
+.addresses-separated-tab .remove-icon {
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    color: #000;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0;
+    border: solid 1px #000;
+    padding-top: 2px;
+}
+.addresses-separated-tab .remove-icon:hover {
+    background-color: #f76b10;
+}
+
+.addresses-separated-tab .pill-container button.btn.race-input-btn {
+    margin-top: 80px !important;
+}
+.addresses-separated-tab .email-pill-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 0px;
+}
+.addresses-separated-tab .email-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #f5f7fb;
+    color: #1a1a1a;
+    border: 1px solid #e3e7ef;
+    border-radius: 999px;
+    padding: 8px 10px;
+    font-size: 14px;
+    line-height: 1;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+.addresses-separated-tab .email-pill .email {
+    white-space: nowrap;
+}
+.addresses-separated-tab .remove-icon {
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    color: #000;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0;
+    border: solid 1px #000;
+}
+.addresses-separated-tab .remove-icon:focus {
+    outline: none;
+}
+.add-players-text h5 {
+    margin-bottom: -6px;
+    color: #fff;
+}
+.addresses-separated-tab .chip-input-box input::placeholder {
+    color: #dddddde6 !important;
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -3115,7 +3284,7 @@ button.btn.btn-outline-info.btn-sm.tf-btn.active {
         min-width: 100px;
         aspect-ratio: 1 / 1;
         border-radius: 50%;
-    } 
+    }
     span.nubmer-value-add {
         font-size: 35px;
     }
@@ -3139,7 +3308,7 @@ button.btn.btn-outline-info.btn-sm.tf-btn.active {
 }
 
 @media (min-width:1024px) and (max-width:1366px){
-       
+
     .join-race-sidebar {
         margin-top: 74px;
     }
@@ -3368,14 +3537,14 @@ i.bi.bi-person-circle {
 
 
 @media (min-width:991px) and (max-width:1020px){
-    
+
     .navbar-menu-wrapper.d-flex.align-items-stretch {
         width: calc(100% - 260px);
     }
     a.navbar-brand.brand-logo {
         display: none;
     }
-     
+
     .navbar-menu-wrapper.d-flex.align-items-stretch {
         width: calc(100% - 74px) !important;
     }
@@ -3404,7 +3573,7 @@ i.bi.bi-person-circle {
         width: 260px !important;
         right: 60px;
     }
-    
+
     .accuracy-img-add-right span.nubmer-value-add {
         font-size: 25px;
     }
@@ -3514,7 +3683,7 @@ i.bi.bi-person-circle {
 
 .participated-races-right .conic-progress .inner {
     font-size: 10px;
-} 
+}
 .participated-tab-left {
     height: 180px;
     margin-bottom: 0px;
@@ -3929,4 +4098,36 @@ li.nav-item.nav-profile.dropdown {
 
 
 
+}
+
+
+.multidropdown  li.nav-item.active {
+    padding: 12px 5px !important;
+}
+.multidropdown .sub-menu {
+    padding-right: 50px;
+}
+.multidropdown li.nav-item.active a.nav-link.active {
+    color: #ffffff !important;
+}
+.multidropdown .sub-menu li.nav-item {
+    padding-left: 5px !important;
+}
+.multidropdown  li.nav-item.active {
+    padding: 12px 5px !important;
+}
+.multidropdown .sub-menu {
+    padding-right: 50px;
+}
+.multidropdown li.nav-item.active a.nav-link.active {
+    color: #ffffff !important;
+}
+.multidropdown .sub-menu li.nav-item {
+    padding-left: 5px !important;
+}
+.multidropdown .sub-menu li.nav-item:hover {
+    background: #f66911 !important;
+}
+.multidropdown .sub-menu li.nav-item {
+    padding: 12px 5px !important;
 }

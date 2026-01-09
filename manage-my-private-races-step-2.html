@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Manage My Private Races - Step 2</title>
+
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/vendors/ti-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css">
+    <!-- endinject -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="/assets/css/theme-dashboard.css">
+    <link rel="stylesheet" href="/custom.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/Logo-final.png" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-scroller">
+
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row dashboard-top-nav-add">
+            <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
+                <a class="navbar-brand brand-logo" href="#">
+                    <img src="assets/images/user-dashboard-logo.png" alt="logo" /></a>
+                <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/Logo-final.png"
+                        alt="logo" /></a>
+            </div>
+            <div class="navbar-menu-wrapper d-flex align-items-stretch">
+                <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                    <span class="mdi mdi-menu"></span>
+                </button>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">How to Play</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">How to Win</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
+                </ul>
+
+                <ul class="navbar-nav navbar-nav-right">
+
+                    <li class="chips-points-add">
+                        <span class="badge coin-pill d-inline-flex align-items-center gap-2 p-2">
+                            <a href="#"><img src="assets/images/Logo-final.png"> <span class="number-add">350</span></a>
+                        </span>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#"
+                            data-bs-toggle="dropdown">
+                            <i class="mdi mdi-bell-outline"></i>
+                            <span class="count-symbol bg-danger"></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end navbar-dropdown preview-list"
+                            aria-labelledby="notificationDropdown" data-bs-popper="static">
+                            <h6 class="p-3 mb-0">Notifications</h6>
+                            <div id="header-notification-list">
+                                <a href="/notifications" class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail me-2">
+                                        <img src="http://127.0.0.1:8000/client/assets/images/Logo-final.png">
+                                    </div>
+                                    <div class="preview-item-content d-flex flex-column justify-content-center">
+                                        <h6 class="preview-subject font-weight-normal mb-1">
+                                            Chips Deducted
+                                        </h6>
+                                        <p class="text-gray ellipsis mb-0">
+                                            You spent 10 chips on Changed a guess
+                                        </p>
+                                        <small class="text-muted">
+                                            8 hours ago
+                                        </small>
+                                    </div>
+                                </a>
+
+                                <a href="/notifications" class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail me-2">
+                                        <img src="http://127.0.0.1:8000/client/assets/images/Logo-final.png">
+                                    </div>
+                                    <div class="preview-item-content d-flex flex-column justify-content-center">
+                                        <h6 class="preview-subject font-weight-normal mb-1">
+                                            Chips Deducted
+                                        </h6>
+                                        <p class="text-gray ellipsis mb-0">
+                                            You spent 10 chips on Placed a guess
+                                        </p>
+                                        <small class="text-muted">
+                                            8 hours ago
+                                        </small>
+                                    </div>
+                                </a>
+
+                                <a href="/notifications" class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail me-2">
+                                        <img src="http://127.0.0.1:8000/client/assets/images/Logo-final.png">
+                                    </div>
+                                    <div class="preview-item-content d-flex flex-column justify-content-center">
+                                        <h6 class="preview-subject font-weight-normal mb-1">
+                                            Your monthly chips balance has been refreshed!
+                                        </h6>
+                                        <p class="text-gray ellipsis mb-0">
+                                            You’ve received 200 chips as part of your monthly reward. Start playing and
+                                            earning now!
+                                        </p>
+                                        <small class="text-muted">
+                                            1 day ago
+                                        </small>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="all-notification-btn">
+                                <a href="/notifications" class="p-3 mb-0 text-center">
+                                    See all notifications
+                                </a>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="nav-item nav-profile dropdown">
+                        <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <div class="nav-profile-img">
+                                <i class="bi bi-person-circle"></i>
+
+                            </div>
+                            <div class="nav-profile-text">
+                                <p class="mb-1 text-black">Priyanka</p>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu navbar-dropdown user-profile-inner-tab"
+                            aria-labelledby="profileDropdown" data-bs-popper="static">
+                            <a class="dropdown-item first-drop-nav" href="http://127.0.0.1:8000/profile">
+                                <i class="bi bi-person-circle me-2 text-success"></i> My Profile </a>
+                            <div class="dropdown-divider"></div>
+
+                            <a class="dropdown-item second-drop-nav" href="http://127.0.0.1:8000/dashboard">
+                                <i class="bi bi-border-all me-2 text-success"></i> Dashboard</a>
+
+                            <div class="dropdown-divider"></div>
+                            <span class="dropdown-item third-drop-nav" href="">
+                                <form action="http://127.0.0.1:8000/logout" method="POST">
+                                    <input type="hidden" name="_token" value="M3j9EoQTZzSQYgAQZ88yEzhti3nD8AvVOFd5fLQV"
+                                        autocomplete="off"> <button class="dropdown-item text-danger"><i
+                                            class="mdi mdi-logout me-2 text-primary"></i> Logout</button>
+                                </form>
+                            </span>
+                        </div>
+                    </li>
+
+
+                </ul>
+
+
+                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+                    data-toggle="offcanvas">
+                    <span class="mdi mdi-menu"></span>
+                </button>
+            </div>
+        </nav>
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+            <!-- partial:partials/_sidebar.html -->
+            <nav class="sidebar sidebar-offcanvas dashboard-side-bar-add" id="sidebar">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-border-all"></i>
+                            <span class="menu-title">Dashboard</span>
+
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-bar-chart-line"></i>
+                            <span class="menu-title">Leaderboard</span>
+
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-flag"></i>
+                            <span class="menu-title">Join a Race</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item private-tab-add">
+                        <a class="nav-link ui-basic-add" data-bs-toggle="collapse" href="#ui-basic"
+                            aria-expanded="false" aria-controls="ui-basic">
+                            <i class="bi bi-person-video2"></i>
+                            <span class="menu-title">Private Race</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+
+                    </li>
+                    <div class="collapse" id="ui-basic">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><span></span> Create Your Own Private Race</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><span></span> Join a Private Race</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><span></span> Manage Your Private Races</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-bar-chart-line"></i>
+                            <span class="menu-title">Learn to Earn Racing Chips</span>
+
+                        </a>
+                    </li>
+
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-share"></i>
+                            <span class="menu-title">Invite Friends, Earn Racing Chips</span>
+
+                        </a>
+                    </li>
+
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-bell"></i>
+                            <span class="menu-title">Notification</span>
+
+                        </a>
+                    </li>
+
+
+
+
+                    <li class="nav-item logout-tab">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-box-arrow-right"></i>
+                            <span class="menu-title">Logout</span>
+
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+            <!-- partial -->
+            <div class="main-panel">
+                <div class="content-wrapper ">
+                    
+                    <div class="container">
+                        <div class="row g-4">
+                            <div class="col-lg-8">
+                                <div class="p-4 bx-shd create-a-private-race-step-two">
+                                    <h2 class="best-buddies-text-add"><span>Best Buddies</span> <br> Daily - SPX(S&P 500) - Guess the Close</span></h2>
+                                    <div class="add-players-text    ">
+                                        <h5>Add/Delete Players</h5>
+                                        <p>Add .edu email addresses separated by comma and click the “+” to add them to the list. Repeat as needed.</p>
+                                    </div>
+
+                                    <div class="addresses-separated-tab">
+                                        <!-- <div class="mb-3">
+                                            <input type="email" class="form-control" placeholder="john@gmu.edu, jane@mit.edu, kayla@u.">
+                                        </div> -->
+
+                                        <div class="chip-input-box">
+                                            <input type="text" id="emailInput" placeholder="john@gmu.edu, jane@mit.edu,kayla@u.">
+                                            <button class="add-btn" onclick="addEmail()">+</button>
+                                          </div>
+                                          
+                                          <div class="pill-container">
+                                            <ul class="email-pill-list" aria-label="Invited emails">
+                                              <li class="email-pill">
+                                                <span class="email">john@gmu.edu</span>
+                                                <button class="remove-icon" type="button" aria-label="Remove john@gmu.edu">−</button>
+                                              </li>
+                                              <li class="email-pill">
+                                                <span class="email">jane@mit.edu</span>
+                                                <button class="remove-icon" type="button" aria-label="Remove jane@mit.edu">−</button>
+                                              </li>
+                                              <li class="email-pill">
+                                                <span class="email">kayla@usc.edu</span>
+                                                <button class="remove-icon" type="button" aria-label="Remove kayla@usc.edu">−</button>
+                                              </li>
+                                              <li class="email-pill">
+                                                <span class="email">jack@umd.edu</span>
+                                                <button class="remove-icon" type="button" aria-label="Remove jack@umd.edu">−</button>
+                                              </li>
+                                              <li class="email-pill">
+                                                <span class="email">ravi@gmu.edu</span>
+                                                <button class="remove-icon" type="button" aria-label="Remove ravi@gmu.edu">−</button>
+                                              </li>
+                                              <li class="email-pill">
+                                                <span class="email">kunal@gmu.edu</span>
+                                                <button class="remove-icon" type="button" aria-label="Remove kunal@gmu.edu">−</button>
+                                              </li>
+                                              <li class="email-pill">
+                                                <span class="email">votive@gmu.edu</span>
+                                                <button class="remove-icon" type="button" aria-label="Remove votive@gmu.edu">−</button>
+                                              </li>
+                                              <li class="email-pill">
+                                                <span class="email">john@gmu.edu</span>
+                                                <button class="remove-icon" type="button" aria-label="Remove john@gmu.edu">−</button>
+                                              </li>
+                                              <li class="email-pill">
+                                                <span class="email">john@gmu.edu</span>
+                                                <button class="remove-icon" type="button" aria-label="Remove john@gmu.edu">−</button>
+                                              </li>
+                                              <li class="email-pill">
+                                                <span class="email">john@gmu.edu</span>
+                                                <button class="remove-icon" type="button" aria-label="Remove john@gmu.edu">−</button>
+                                              </li>
+                                            </ul>
+                                           
+                                            <button class="btn race-input-btn btn-warning mt-4 px-5 add-delete-btn">Add/Delete Players</button>
+                                          </div>
+                                          
+                                        
+                                          
+                                         
+
+                                    </div>
+                                     
+                                </div>
+
+                          
+                            </div>
+
+                            <!-- RIGHT PANEL -->
+                            <div class="col-lg-4">
+                                <div class="summary-box bx-shd mb-4">
+                                    <div class="bg-grad">
+                                        <h5>Race Summary</h5>
+                                    </div>
+                                    <div class="summary-cont race-summary-content">
+
+                                        <div class="spx-content-add-right">
+                                            <p>Index: <span>SPX</span></p>
+                                            <p>Mode: <span>Daily</span></p>
+                                            <p>Race Name: <span>Best Buddies</span></p>
+                                            <p>Cost: <span>30 Racing Chips</span></p>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="summary-box bx-shd">
+                                    <div class="bg-grad">
+                                        <h5>Please Note:</h5>
+                                    </div>
+                                    <div class="summary-cont">
+                                       <p>Friends who already have an account will receive an in-app invitation to join YOUR race; those who do not yet have an account will receive an invite on their .edu email</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- content-wrapper ends -->
+                    <!-- partial:partials/_footer.html -->
+
+                    <!-- partial -->
+                </div>
+                <!-- main-panel ends -->
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- plugins:js -->
+    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="assets/vendors/chart.js/chart.umd.js"></script>
+    <script src="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="assets/js/off-canvas.js"></script>
+    <script src="assets/js/misc.js"></script>
+    <script src="assets/js/settings.js"></script>
+    <script src="assets/js/todolist.js"></script>
+    <script src="assets/js/jquery.cookie.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="assets/js/dashboard.js"></script>
+</body>
+
+</html>
