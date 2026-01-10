@@ -1584,7 +1584,7 @@ i.bi.bi-pencil-square {
     color: #fff;
     border-radius: 50px;
     padding: 16px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     border: none;
 }
@@ -1606,7 +1606,7 @@ i.bi.bi-pencil-square {
     border-radius: 50px;
     padding: 16px;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .btn-decline:hover {
@@ -1640,9 +1640,9 @@ p {
     line-height: 26px;
 }
 
-.join-race-sidebar {
+/* .join-race-sidebar {
     margin-top: 80px;
-}
+} */
 
 .join-race-tabs {
     margin-top: 60px;
@@ -1684,7 +1684,7 @@ p {
     padding: 20px;
 }
 .tab-content.leader-board-cont div#leaderboardContent .race-card img {
-    width: 130px;
+    width: 120px;
 }
 .race-card.active,
 .race-card:hover {
@@ -1719,6 +1719,8 @@ p {
 
 .summary-cont {
     padding: 16px;
+    background: #091D5F;
+    border-radius: 12px;
 }
 
 .summary-box p {
@@ -1837,10 +1839,10 @@ ul#raceTabs {
 }
 
 
-
+/* 
 .join-race-sidebar {
     margin-top: 70px;
-}
+} */
 
 .join-race-tabs {
     margin-top: 50px;
@@ -1893,6 +1895,7 @@ ul#raceTabs {
     text-align: center;
     margin: auto;
     padding-bottom: 20px;
+    background: #091D5F;
 }
 .list-of-daily-races h4 {
     background: -webkit-linear-gradient(#F76B10, #FFA647);
@@ -2084,6 +2087,7 @@ p.small.notes {
 }
 .list-last-view li span {
     font-weight: 600;
+    font-size: 13px;
 }
 .list-last-view span.badge {
     background: rgba(15, 118, 110, 0.2);
@@ -2201,7 +2205,7 @@ input[type="number"] {
 }
 .wnr-table tbody tr td {
     color: #ffffff;
-    text-align: center;
+    text-align: left    ;
     font-family: 'Lato';
 }
 .wnr-table tbody tr {
@@ -3190,15 +3194,31 @@ button.btn.btn-outline-info.btn-sm.tf-btn.active {
 .chart-accrd div#spxCanvas table canvas:nth-child(1) {
     width: 100% !important;
 }
-
-
-/* Responsive */
-@media (max-width: 768px) {
-  .chips-history-table th,
-  .chips-history-table td {
-    padding: 12px;
+.inner-text-join-add {
+    font-size: 16px !important;
+}
+label.range-price-add p {
     font-size: 13px;
-  }
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+label.range-price-add {
+    display: flex;
+    justify-content: space-between;
+}
+p.select-index-text {
+    font-size: 18px;
+}
+
+.join-private-race-add .custom-card h5 {
+    font-size: 20px;
+}
+.daily-leaderboard-races h3.text-center {
+    font-size: 22px;
+}
+.ldb-winners .table-responsive {
+    text-align: left;
 }
 
 @media (min-width:1025px) and (max-width:1335px){
@@ -3324,10 +3344,10 @@ button.btn.btn-outline-info.btn-sm.tf-btn.active {
 }
 
 @media (min-width:1024px) and (max-width:1366px){
-
+/* 
     .join-race-sidebar {
         margin-top: 74px;
-    }
+    } */
 
 }
 
@@ -3400,11 +3420,10 @@ button.btn.btn-outline-info.btn-sm.tf-btn.active {
     .navbar .navbar-menu-wrapper .navbar-nav .coin-pill img {
         width: 25px;
     }
-
     .navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link {
         font-size: 14px;
         margin-left: 0;
-        margin-right: 20px;
+        margin-right: 15px;
         font-family: 'Lato';
     }
 
@@ -3555,6 +3574,32 @@ i.bi.bi-person-circle {
 .addresses-separated-tab .pill-container button.btn.race-input-btn {
     margin-top: 40px !important;
 }
+.chips-history-table th,
+.chips-history-table td {
+  padding: 12px;
+  font-size: 13px;
+}
+.join-private-race-add .custom-card {
+    padding: 15px;
+}
+.join-private-race-add .custom-card p {
+    margin-bottom: 10px !important;
+    font-size: 14px;
+}
+.join-private-race-add .mt-auto {
+    margin-top: 10px !important;
+}
+.join-private-race-add .btn-join {
+    padding: 13px;
+    border: none;
+}
+.join-private-race-add .btn-decline {
+    border-radius: 50px;
+    padding: 13px;
+}
+
+
+
 
 }
 
@@ -3911,7 +3956,7 @@ i.bi.bi-person-circle {
     margin-bottom: 5px;
 }
 .list-of-daily-races {
-    width: 68%;
+    width: 72%;
 }
 
 h1.inner-heading {
@@ -3967,6 +4012,7 @@ h1.inner-heading {
 }
 .wnr-extra-info {
     display: block;
+    padding-top: 10px;
 }
 .your--rank-info {
     margin-top: 15px;
@@ -4158,6 +4204,37 @@ li.nav-item.nav-profile.dropdown {
 .create-a-private-race-step-two h2 span {
     font-size: 20px;
 }
+
+.manage-my-private-races .my-races-race-btn {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.my-races-tabs button.nav-link {
+    width: 100%;
+    line-height: 1.4;
+}
+.dropdown-menu.dropdown-menu-end.navbar-dropdown.preview-list.show {
+    padding: 6px !important;
+    margin-top: -18px !important;
+}
+.join-private-race-add .japr {
+    margin-bottom: 15px;
+}
+.page-header h1.user-name-show span {
+    color: #f76b10;
+    font-size: 22px;
+}
+.join-private-race-add .btn-decline {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+.join-private-race-add .custom-card {
+    padding: 20px;
+}
+
 
 }
 
