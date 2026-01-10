@@ -3221,6 +3221,10 @@ p.select-index-text {
     text-align: left;
 }
 
+.dashboard-top-nav-add button.navbar-toggler.navbar-toggler.align-self-center {
+    pointer-events: none;
+}
+
 @media (min-width:1025px) and (max-width:1335px){
 
     .container.participated-tab {
@@ -3368,6 +3372,9 @@ p.select-index-text {
 /* tablet-view-css */
 @media (min-width:768px) and (max-width:1024px){
 
+    .dashboard-top-nav-add button.navbar-toggler.navbar-toggler.align-self-center {
+        pointer-events: all;
+    }
     nav.sidebar.sidebar-offcanvas.dashboard-side-bar-add ul.nav {
         width: 100% !important;
     }
@@ -3627,6 +3634,10 @@ i.bi.bi-person-circle {
 /* mobile-view-css */
 
 @media (max-width: 767px) {
+
+    .dashboard-top-nav-add button.navbar-toggler.navbar-toggler.align-self-center {
+        pointer-events: all;
+    }
 
     nav.sidebar.sidebar-offcanvas.dashboard-side-bar-add ul.nav {
         width: 100%;
