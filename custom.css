@@ -1839,7 +1839,7 @@ ul#raceTabs {
 }
 
 
-/* 
+/*
 .join-race-sidebar {
     margin-top: 70px;
 } */
@@ -1907,6 +1907,7 @@ ul#raceTabs {
 }
 .inner-list-of-races p {
     line-height: 1;
+    cursor: pointer;
 }
 .inner-list-of-races p:hover {
     color: #F66911;
@@ -3121,7 +3122,7 @@ button.btn.btn-outline-info.btn-sm.tf-btn.active {
     font-size: 14px;
     color: #000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}   
+}
 .addresses-separated-tab .remove-icon {
     appearance: none;
     width: 22px;
@@ -3134,8 +3135,43 @@ button.btn.btn-outline-info.btn-sm.tf-btn.active {
     border: solid 1px #000;
     padding-top: 2px !important;
 }
+
 .addresses-separated-tab .remove-icon:hover {
     background-color: #f76b10;
+}
+.create-a-private-race-step-two {
+    overflow: hidden;
+}
+.create-a-private-race-step-two .email-error {
+    color: #f44336 !important;
+}
+
+/* Chrome, Edge, Safari */
+.email-pill-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.email-pill-list::-webkit-scrollbar-track {
+  background: transparent;     /* ✅ removed background */
+}
+
+.email-pill-list::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #f66911, #f66911);
+  border-radius: 10px;
+}
+
+.email-pill-list::-webkit-scrollbar-thumb:hover {
+  background: #f66911;
+}
+
+/* Firefox */
+.email-pill-list {
+  scrollbar-width: thin;
+  scrollbar-color: #f66911 transparent; /* ✅ no track bg */
+}
+h2.best-buddies-text-add .race_sml {
+    color: #ffffff;
+    -webkit-text-fill-color: #ffffff;
 }
 
 .addresses-separated-tab .pill-container button.btn.race-input-btn {
@@ -3143,12 +3179,16 @@ button.btn.btn-outline-info.btn-sm.tf-btn.active {
 }
 .addresses-separated-tab .email-pill-list {
     list-style: none;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     width: 100%;
     padding: 15px;
     padding-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    white-space: nowrap;
+    max-height: 180px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 .addresses-separated-tab .email-pill {
     display: inline-flex;
@@ -3162,6 +3202,7 @@ button.btn.btn-outline-info.btn-sm.tf-btn.active {
     font-size: 14px;
     line-height: 1;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+    width: auto;
 }
 .addresses-separated-tab .email-pill .email {
     white-space: nowrap;
@@ -3224,6 +3265,335 @@ p.select-index-text {
 .dashboard-top-nav-add button.navbar-toggler.navbar-toggler.align-self-center {
     pointer-events: none;
 }
+
+
+/* side-bar-dropdown-css-add */
+
+.multidropdown  li.nav-item.active {
+    padding: 12px 5px !important;
+}
+.multidropdown .sub-menu {
+    padding-right: 50px;
+}
+.multidropdown li.nav-item.active a.nav-link.active {
+    color: #ffffff !important;
+}
+.multidropdown .sub-menu li.nav-item {
+    padding-left: 5px !important;
+}
+.multidropdown  li.nav-item.active {
+    padding: 12px 5px !important;
+}
+.multidropdown .sub-menu {
+    padding-right: 50px;
+}
+.multidropdown li.nav-item.active a.nav-link.active {
+    color: #ffffff !important;
+}
+
+.multidropdown .sub-menu li.nav-item {
+    padding: 4px 2px !important;
+    padding-left: 5px !important;
+}
+.multidropdown.collapse.show ul.nav.flex-column.sub-menu li.nav-item:hover {
+    background: none !important;
+}
+.multidropdown.collapse.show ul.nav.flex-column.sub-menu li.nav-item.active{
+    background: none !important;
+}
+.multidropdown .sub-menu li.nav-item a.nav-link:hover {
+    color: #F66911 !important;
+}
+
+.multidropdown .sub-menu li.nav-item a.nav-link.active {
+    color: #F66911 !important;
+    background: none !important;
+}
+
+ul.nav.flex-column.sub-menu li.nav-item.active {
+    background: none;
+}
+
+nav#sidebar li.nav-item.logout-tab a.nav-link span {
+    color: #F66911 !important;
+}
+
+nav#sidebar li.nav-item.logout-tab i {
+    color: #F66911 !important;
+}
+
+nav#sidebar li.nav-item.logout-tab:hover a.nav-link span {
+    color: #fff !important;
+}
+nav#sidebar li.nav-item.logout-tab i.bi.bi-box-arrow-right {
+    color: #F66911 !important;
+}
+nav#sidebar li.nav-item.logout-tab:hover i.bi.bi-box-arrow-right {
+    color: #fff !important;
+}
+
+
+/* Quiz-1-page-css */
+.quiz-one-start-page h4.quiz-text-add {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    color: #fff;
+    margin-top: -18px;
+}
+
+.trading-quiz-start .app {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+  }
+  
+  .trading-quiz-start .card {
+    width: 100%;
+    background: linear-gradient(180deg, var(--card), #0c264b);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 28px;
+  }
+  .trading-quiz-start .question {
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    color: #fff;
+    margin-top: 0px;
+}
+  
+  .trading-quiz-start .choice-group {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .trading-quiz-start .choice {
+    position: relative;
+    margin-bottom: 20px;
+}
+  
+  .trading-quiz-start .choice:last-child {
+    margin-bottom: 0;
+  }
+  .trading-quiz-start .choice input {
+    position: absolute;
+    opacity: 0;
+    inset: 0;
+    cursor: pointer;
+}
+.trading-quiz-start .choice label {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px !important;
+    width: 100%;
+    padding: 13px 18px;
+    background: #3A4B7C;
+    border: 1px solid transparent;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: background 180ms ease, border-color 180ms ease, transform 120ms ease;
+}
+  
+  .trading-quiz-start .choice label:hover {
+    background: var(--bar-hover);
+  }
+  
+  .trading-quiz-start .choice input:focus-visible + label {
+    outline: 3px solid var(--focus);
+    outline-offset: 2px;
+  }
+  
+  .trading-quiz-start .label-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text);
+}
+  
+.trading-quiz-start .choice input:checked + label {
+    background: #085931;
+    transition: background 0.6s;
+}
+  
+  .trading-quiz-start .choice input:checked + label::before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--accent);
+    display: inline-block;
+}
+  
+.trading-quiz-start .choice input:checked + label::after {
+    content: "✓";
+    color: #fff;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    position: absolute;
+    left: 18px;
+    background: #0D9A0D;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+}
+  
+.trading-quiz-start .choice input:not(:checked) + label::before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    display: inline-block;
+}
+.trading-quiz-start .nav {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+    justify-content: center;
+    padding: 15px 0px;
+    padding-bottom: 5px;
+}
+.trading-quiz-start .nav a {
+    width: 30%;
+}
+  
+  .trading-quiz-start .btn {
+    appearance: none;
+    border: none;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    transition: transform 120ms ease, background 150ms ease, box-shadow 150ms ease;
+  }
+  
+  .trading-quiz-start .btn:hover {
+    transform: translateY(-1px);
+  }
+  
+  .trading-quiz-start .btn:active {
+    transform: translateY(0);
+    color: #fff;
+}
+  
+  .trading-quiz-start .btn:focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 2px;
+  }
+  .trading-quiz-start .btn-prev {
+    color: white;
+    background: linear-gradient(100deg, #f76b10, #ffa647);
+    border-radius: 50px;
+    font-family: 'Lato';
+    font-size: 15px;
+    width: 100%;
+}
+  
+.trading-quiz-start .btn-next {
+    color: white;
+    background: linear-gradient(100deg, #f76b10, #ffa647);
+    border-radius: 50px;
+    font-family: 'Lato';
+    font-size: 15px;
+    width: 100%;
+}
+  .trading-quiz-start .sr-only {
+    position: absolute !important;
+    height: 1px; width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+  }
+
+
+  /* quiz-2-page-css */
+  .trading-quiz-two-start .choice span.feedback-icon {
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 0px;
+    font-size: 14px;
+}
+/* .trading-quiz-two-start button.action-button {
+    color: #fff;
+    text-align: left;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px !important;
+    width: 100%;
+    padding: 13px 18px;
+    background: #800B2B;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: background 180ms ease, border-color 180ms ease, transform 120ms ease;
+    font-size: 16px;
+    font-weight: 500;
+} */
+/* .quiz-two-first-tab .incorrect label.quiz-two-yes {
+    background: #800B2B !important;
+}
+.quiz-two-first-tab .incorrect label.quiz-two-yes::after {
+    content: "\F62A" !important;
+    font-family: 'bootstrap-icons';
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 18px !important;
+} */
+.trading-quiz-two-start button.action-button i {
+    background: #fff;
+    color: #000;
+    padding: 5px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    font-size: 20px;
+}
+
+.trading-quiz-two-start .quiz-two-first-tab {
+    display: flex;
+    gap: 25px;
+}
+
+.trading-quiz-two-start .choice {
+    position: relative;
+    margin-bottom: 30px;
+    width: 100%;
+}
+ 
+.trading-quiz-two-start .nav button.btn.btn-retake {
+    color: white;
+    background: linear-gradient(100deg, #f76b10, #ffa647);
+    border-radius: 50px;
+    font-family: 'Lato';
+    font-size: 15px;
+    width: 30%;
+}
+.trading-quiz-two-start button.btn.btn-lesson {
+    color: white;
+    background: linear-gradient(100deg, #f76b10, #ffa647);
+    border-radius: 50px;
+    font-family: 'Lato';
+    font-size: 15px;
+    width: 30%;
+}
+
+.trading-quiz-two-start .quiz-feedback p {
+    text-align: center;
+    font-size: 14px;
+}
+.trading-quiz-two-start fieldset.choice-group {
+    padding-top: 10px;
+}
+
 
 @media (min-width:1025px) and (max-width:1335px){
 
@@ -3301,8 +3671,8 @@ p.select-index-text {
         font-weight: 600;
     }
     .guesse-left p {
-            font-size: 15px;
-            font-weight: 600;
+        font-size: 15px;
+        font-weight: 600;
     }
 
     .guesse-right p {
@@ -3343,12 +3713,15 @@ p.select-index-text {
         padding: 15px;
         padding-left: 0px;
     }
+    .trading-quiz-start .nav a {
+        width: 45%;
+    }
 
 
 }
 
 @media (min-width:1024px) and (max-width:1366px){
-/* 
+/*
     .join-race-sidebar {
         margin-top: 74px;
     } */
@@ -4245,72 +4618,42 @@ li.nav-item.nav-profile.dropdown {
 .join-private-race-add .custom-card {
     padding: 20px;
 }
-
-
+.quiz-one-start-page .trading-quiz-start .question {
+    font-size: 18px;
 }
 
-
-/* side-bar-dropdown-css-add */
-
-.multidropdown  li.nav-item.active {
-    padding: 12px 5px !important;
-}
-.multidropdown .sub-menu {
-    padding-right: 50px;
-}
-.multidropdown li.nav-item.active a.nav-link.active {
-    color: #ffffff !important;
-}
-.multidropdown .sub-menu li.nav-item {
-    padding-left: 5px !important;
-}
-.multidropdown  li.nav-item.active {
-    padding: 12px 5px !important;
-}
-.multidropdown .sub-menu {
-    padding-right: 50px;
-}
-.multidropdown li.nav-item.active a.nav-link.active {
-    color: #ffffff !important;
+.quiz-one-start-page .trading-quiz-start .label-text {
+    font-size: 15px;
 }
 
-.multidropdown .sub-menu li.nav-item {
-    padding: 4px 2px !important;
-    padding-left: 5px !important;
+.quiz-one-start-page .trading-quiz-start .card {
+    width: 100%;
+    padding: 20px;
 }
-.multidropdown.collapse.show ul.nav.flex-column.sub-menu li.nav-item:hover {
-    background: none !important;
-}
-.multidropdown.collapse.show ul.nav.flex-column.sub-menu li.nav-item.active{
-    background: none !important;
-}
-.multidropdown .sub-menu li.nav-item a.nav-link:hover {
-    color: #F66911 !important;
+.quiz-one-start-page .trading-quiz-start .choice label {
+    width: 100%;
+    padding: 11px 18px;
+    transition: background 180ms ease, border-color 180ms ease, transform 120ms ease;
 }
 
-.multidropdown .sub-menu li.nav-item a.nav-link.active {
-    color: #F66911 !important;
-    background: none !important;
+.quiz-one-start-page .trading-quiz-start .nav {
+    margin-top: 10px;
+    padding-bottom: 0px;
 }
 
-ul.nav.flex-column.sub-menu li.nav-item.active {
-    background: none;
+.quiz-one-start-page .trading-quiz-start .btn-prev {
+    width: 100%;
+    font-size: 14px;
+}
+.quiz-one-start-page .trading-quiz-start .btn-next {
+    width: 100%;
+    font-size: 14px;
+}
+.quiz-one-start-page .trading-quiz-start .nav a {
+    width: 47%;
+}
+.private-leaderboard .inner-list-of-races p {
+    font-size: 14px;
 }
 
-nav#sidebar li.nav-item.logout-tab a.nav-link span {
-    color: #F66911 !important;
-}
-
-nav#sidebar li.nav-item.logout-tab i {
-    color: #F66911 !important;
-}
-
-nav#sidebar li.nav-item.logout-tab:hover a.nav-link span {
-    color: #fff !important;
-}
-nav#sidebar li.nav-item.logout-tab i.bi.bi-box-arrow-right {
-    color: #F66911 !important;
-}
-nav#sidebar li.nav-item.logout-tab:hover i.bi.bi-box-arrow-right {
-    color: #fff !important;
 }
