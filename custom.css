@@ -3420,8 +3420,8 @@ nav#sidebar li.nav-item.logout-tab:hover i.bi.bi-box-arrow-right {
   
   .trading-quiz-start .choice input:checked + label::before {
     content: "";
-    width: 22px;
-    height: 22px;
+    width: 21px;
+    height: 21px;
     border-radius: 50%;
     background: var(--accent);
     display: inline-block;
@@ -3444,23 +3444,22 @@ nav#sidebar li.nav-item.logout-tab:hover i.bi.bi-box-arrow-right {
   
 .trading-quiz-start .choice input:not(:checked) + label::before {
     content: "";
-    width: 22px;
-    height: 22px;
+    width: 21px;
+    height: 21px;
     border-radius: 50%;
     background: #fff;
-    border: 2px solid rgba(255, 255, 255, 0.18);
     display: inline-block;
 }
 .trading-quiz-start .nav {
     display: flex;
-    gap: 12px;
+    gap: 25px;
     margin-top: 20px;
     justify-content: center;
     padding: 15px 0px;
     padding-bottom: 5px;
 }
 .trading-quiz-start .nav a {
-    width: 30%;
+    width: 35%;
 }
   
   .trading-quiz-start .btn {
@@ -3510,6 +3509,13 @@ nav#sidebar li.nav-item.logout-tab:hover i.bi.bi-box-arrow-right {
     white-space: nowrap;
   }
 
+#q1-false:checked + label {
+    background-color: #800b2b;
+    color: #fff;
+}
+.trading-quiz-start .choice input:checked + .quiz-one-false-add::after {
+    background: #d02352 !important;
+}
 
   /* quiz-2-page-css */
   .trading-quiz-two-start .choice span.feedback-icon {
@@ -3518,33 +3524,7 @@ nav#sidebar li.nav-item.logout-tab:hover i.bi.bi-box-arrow-right {
     margin-top: 0px;
     font-size: 14px;
 }
-/* .trading-quiz-two-start button.action-button {
-    color: #fff;
-    text-align: left;
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    gap: 10px;
-    border-radius: 50px !important;
-    width: 100%;
-    padding: 13px 18px;
-    background: #800B2B;
-    border: 1px solid transparent;
-    cursor: pointer;
-    transition: background 180ms ease, border-color 180ms ease, transform 120ms ease;
-    font-size: 16px;
-    font-weight: 500;
-} */
-/* .quiz-two-first-tab .incorrect label.quiz-two-yes {
-    background: #800B2B !important;
-}
-.quiz-two-first-tab .incorrect label.quiz-two-yes::after {
-    content: "\F62A" !important;
-    font-family: 'bootstrap-icons';
-    background: #fff !important;
-    color: #000 !important;
-    font-size: 18px !important;
-} */
+
 .trading-quiz-two-start button.action-button i {
     background: #fff;
     color: #000;
@@ -3575,7 +3555,10 @@ nav#sidebar li.nav-item.logout-tab:hover i.bi.bi-box-arrow-right {
     border-radius: 50px;
     font-family: 'Lato';
     font-size: 15px;
-    width: 30%;
+    width: 90%;
+}
+.trading-quiz-two-start .nav a {
+    width: 34%;
 }
 .trading-quiz-two-start button.btn.btn-lesson {
     color: white;
@@ -3583,15 +3566,50 @@ nav#sidebar li.nav-item.logout-tab:hover i.bi.bi-box-arrow-right {
     border-radius: 50px;
     font-family: 'Lato';
     font-size: 15px;
-    width: 30%;
+    width: 90%;
+}
+.trading-quiz-two-start .nav {
+    justify-content: center;
+    gap: 0px;
 }
 
 .trading-quiz-two-start .quiz-feedback p {
     text-align: center;
-    font-size: 14px;
+    font-size: 15px;
 }
 .trading-quiz-two-start fieldset.choice-group {
     padding-top: 10px;
+}
+.trading-quiz-start .choice input:checked + label.quiz-two-yes {
+    background: #800b2b;
+}
+.trading-quiz-start .choice input:checked + label.quiz-two-yes::after {
+    content: "\F62A";
+    background: #d02352;
+    font-family: 'bootstrap-icons';
+    font-size: 18px;
+}
+p.cost_cmg {
+    text-align: center;
+}
+
+/* quiz-3-page-css */
+button.btn.claim-your-btn {
+    color: white;
+    background: linear-gradient(100deg, #f76b10, #ffa647);
+    border-radius: 50px;
+    font-family: 'Lato';
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 0px;
+    width: 32%;
+    justify-content: center;
+}
+
+button.btn.claim-your-btn img {
+    width: 35px;
 }
 
 
@@ -3671,8 +3689,8 @@ nav#sidebar li.nav-item.logout-tab:hover i.bi.bi-box-arrow-right {
         font-weight: 600;
     }
     .guesse-left p {
-        font-size: 15px;
-        font-weight: 600;
+            font-size: 15px;
+            font-weight: 600;
     }
 
     .guesse-right p {
@@ -3716,7 +3734,43 @@ nav#sidebar li.nav-item.logout-tab:hover i.bi.bi-box-arrow-right {
     .trading-quiz-start .nav a {
         width: 45%;
     }
-
+    .navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link {
+        color: #fff;
+        font-size: 15px;
+    }
+    .trading-quiz-start .question {
+        font-size: 20px;
+    }
+    .trading-quiz-two-start .nav button.btn.btn-retake {
+        width: 100%;
+    }
+    .trading-quiz-two-start button.btn.btn-lesson {
+        width: 100%;
+    }
+    .trading-quiz-two-start .nav {
+        justify-content: center;
+        gap: 10px;
+        margin-top: 0px;
+        padding-top: 5px;
+    }
+    button.btn.claim-your-btn {
+        width: 55%;
+        justify-content: center;
+    }
+    
+    .quiz-third-next-start .quiz-two-first-tab {
+        display: block;
+    }
+    
+    .quiz-third-next-start .trading-quiz-two-start .choice {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .trading-quiz-two-start .choice {
+        position: relative;
+        margin-bottom: 20px;
+        width: 100%;
+    }
 
 }
 
@@ -3978,7 +4032,14 @@ i.bi.bi-person-circle {
     padding: 13px;
 }
 
-
+.trading-quiz-two-start .nav {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.trading-quiz-two-start .choice {
+    margin-bottom: 20px;
+    width: 100%;
+}
 
 
 }
@@ -4636,10 +4697,6 @@ li.nav-item.nav-profile.dropdown {
     transition: background 180ms ease, border-color 180ms ease, transform 120ms ease;
 }
 
-.quiz-one-start-page .trading-quiz-start .nav {
-    margin-top: 10px;
-    padding-bottom: 0px;
-}
 
 .quiz-one-start-page .trading-quiz-start .btn-prev {
     width: 100%;
@@ -4650,10 +4707,78 @@ li.nav-item.nav-profile.dropdown {
     font-size: 14px;
 }
 .quiz-one-start-page .trading-quiz-start .nav a {
-    width: 47%;
+    width: 70%;
 }
 .private-leaderboard .inner-list-of-races p {
     font-size: 14px;
 }
+.quiz-two-next-start .quiz-two-first-tab {
+    display: block;
+    gap: 25px;
+}
+.quiz-two-next-start .choice {
+    margin-bottom: 20px;
+}
+.quiz-two-next-start .choice.correct {
+    margin-bottom: 20px !important;
+}
+
+.quiz-two-next-start .trading-quiz-start .nav {
+    margin-top: 0px;
+    padding-bottom: 0px;
+    gap: 8px;
+    display: block;
+    padding-top: 0px;
+}
+
+.quiz-two-next-start .nav button.btn.btn-retake {
+    width: 70%;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.quiz-two-next-start button.btn.btn-lesson {
+    width: 70%;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.trading-quiz-start .nav {
+    display: flex;
+    gap: 15px;
+}
+
+/* quiz-3-page-css */
+.quiz-third-next-start .quiz-two-first-tab {
+    display: block;
+}
+.quiz-third-next-start .choice {
+    margin-bottom: 20px;
+}
+.quiz-third-next-start .choice.correct {
+    margin-bottom: 20px;
+}
+.quiz-third-next-start button.btn.claim-your-btn {
+    padding: 4px 0px;
+    width: 70%;
+}
+.quiz-third-next-start .nav {
+    display: flex;
+    gap: 15px;
+    margin-top: 0px;
+    padding-top: 5px;
+}
+.trading-quiz-start .nav {
+    margin-top: 5px;
+}
+
+
 
 }
+
